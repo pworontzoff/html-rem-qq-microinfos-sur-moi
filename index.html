@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<!-- compatibility issue -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- meta elements -->
+		<meta charset="utf-8" /> 
+		<meta name="description" content="Exercices sur les microdata HTML5" /> 
+		<meta name="keywords" content="microdata" />
+		
+		<link rel="stylesheet" type="text/css" href="./css/screen.css" media="screen" /> 
+
+		<title>Les microdata</title>
+	</head>
+	<body>
+		<header>
+			<h1>Quelques microinfos sur moi</h1>
+		</header>
+		<section>
+			<h2>Mes coordonnées</h2>
+			<article>
+				<h3>John Doe</h3>
+				<address>
+					<a href="mailto:john.doe@hepl.be" title="Ecrire un mail à John">john.doe@hepl.be</a><br />
+					<span>
+					 	<span>Rue de la Paix, 2</span> à
+					 	<span>4000</span>
+	    				<span>Liège</span>
+				 	</span>
+				</address>
+				<p>
+					Tél&nbsp;: <span>0499/99 99 99</span>
+				</p>
+			</article>
+		</section>
+		<section>
+			<h2>Mon livre puis mon film préférés</h2>
+			<article>
+				<h3>HTML5 Une référence pour le dévelopeur Web</h3>
+				<ul>
+					<li>De <cite><span>Rodolphe Rimelé</span></cite></li>
+					<li>Aux éditions <span>Eyrolles</span></li>
+					<li><span>2<sup>e</sup> édition</span></li>
+					<li>Date&nbsp;: <time datetime="2013">2013</time></li>
+					<li>ISBN&nbsp;: <span>978-2-21213638-8</span></li>
+				</ul>
+			</article>
+			<article>
+				<h3>Skyfall</h3>
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/fr/2/25/Skyfall_logo.jpg" alt="Logo du film SkyFall" title="Mon film préféré" width="618" height="187" />
+				</figure>
+				<ul>
+					<li>Genre&nbsp;: <span>Policier</span></li>
+					<li>Date&nbsp;: <time datetime="2012">2012</time></li>
+					<li>Réalisateur&nbsp;: <span>Sam Mendes</span></li>
+					<li>
+						Acteurs principaux&nbsp;:
+						<ul>
+							<li>Daniel Craig</li>
+							<li>Judi Dench</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</body>
+</html>

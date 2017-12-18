@@ -1,0 +1,68 @@
+@import url( reset.css );
+body {
+  font-family: Hind, sans-serif;
+  text-align: center;
+}
+section {
+  margin: 50px auto;
+  padding: 5px;
+  background-color: #eef5f7;
+  border: 1px solid #cfd5da;
+  border-bottom-color: #ccd1d6;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+article {
+  padding: 25px;
+  border-radius: 2px;
+  background-color: white;
+  border: 10px solid #d8e1e6;
+  width: 80%;
+  margin: 50px auto;
+}
+p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Hind, sans-serif;
+  color: #a6a7aa;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+em,li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Hind, sans-serif;
+  color: #515769;
+}
+a {
+  font-family: Hind, sans-serif;
+  color: #81848f;
+  outline: 0;
+}
+a:focus, a:hover, a:active {
+  outline: 0;
+  color: #999caa;
+  text-decoration: none;
+}
+span {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Hind, sans-serif;
+  color: #bfc1c7;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: Hind, sans-serif;
+  color: #515769;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 22px;
+}
