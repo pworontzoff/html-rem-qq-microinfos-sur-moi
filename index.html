@@ -15,57 +15,57 @@
 
 		<title>Les microdata</title>
 	</head>
-	<body>
+	<body itemscope itemtype="http://schema.org/WebPage">
 		<header>
 			<h1>Quelques microinfos sur moi</h1>
 		</header>
 		<section>
 			<h2>Mes coordonnées</h2>
-			<article>
-				<h3>John Doe</h3>
+			<article itemscope itemtype="http://schema.org/Person">
+				<h3 itemprop="name">John Doe</h3>
 				<address>
-					<a href="mailto:john.doe@hepl.be" title="Ecrire un mail à John">john.doe@hepl.be</a><br />
-					<span>
-					 	<span>Rue de la Paix, 2</span> à
-					 	<span>4000</span>
-	    				<span>Liège</span>
-				 	</span>
+					<a href="mailto:john.doe@hepl.be" itemprop="email" title="Ecrire un mail à John">john.doe@hepl.be</a><br />
+					<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					 	<span itemprop="streetAddress">Rue de la Paix, 2</span> à
+					 	<span itemprop="postalCode">4000</span>
+	    				<span itemprop="addressLocality">Liège</span>
+				 	</span> <!-- scope PostalAddress -->
 				</address>
 				<p>
-					Tél&nbsp;: <span>0499/99 99 99</span>
+					Tél&nbsp;: <span itemprop="telephone">0499/99 99 99</span>
 				</p>
-			</article>
+			</article> <!-- scope Person -->			
 		</section>
 		<section>
 			<h2>Mon livre puis mon film préférés</h2>
-			<article>
-				<h3>HTML5 Une référence pour le dévelopeur Web</h3>
+			<article itemscope itemtype="http://schema.org/Book">
+				<h3 itemprop="name">HTML5 Une référence pour le dévelopeur Web</h3>
 				<ul>
-					<li>De <cite><span>Rodolphe Rimelé</span></cite></li>
-					<li>Aux éditions <span>Eyrolles</span></li>
-					<li><span>2<sup>e</sup> édition</span></li>
-					<li>Date&nbsp;: <time datetime="2013">2013</time></li>
-					<li>ISBN&nbsp;: <span>978-2-21213638-8</span></li>
+					<li>De <cite itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Rodolphe Rimelé</span></cite></li>
+					<li itemprop="publisher" itemscope itemtype="http://schema.org/Organization">Aux éditions <span itemprop="name">Eyrolles</span></li>
+					<li><span itemprop="bookEdition">2<sup>e</sup> édition</span></li>
+					<li>Date&nbsp;: <time datetime="2013" itemprop="dateModified">2013</time></li>
+					<li>ISBN&nbsp;: <span itemprop="isbn">978-2-21213638-8</span></li>
 				</ul>
-			</article>
-			<article>
-				<h3>Skyfall</h3>
+			</article> <!-- scope Book -->
+			<article itemscope itemtype="http://schema.org/Movie">
+				<h3 itemprop="name">Skyfall</h3>
 				<figure>
-					<img src="https://upload.wikimedia.org/wikipedia/fr/2/25/Skyfall_logo.jpg" alt="Logo du film SkyFall" title="Mon film préféré" width="618" height="187" />
+					<img itemprop="image" src="https://upload.wikimedia.org/wikipedia/fr/2/25/Skyfall_logo.jpg" alt="Logo du film SkyFall" title="Mon film préféré" width="618" height="187" />
 				</figure>
 				<ul>
-					<li>Genre&nbsp;: <span>Policier</span></li>
-					<li>Date&nbsp;: <time datetime="2012">2012</time></li>
-					<li>Réalisateur&nbsp;: <span>Sam Mendes</span></li>
-					<li>
+					<li>Genre&nbsp;: <span itemprop="genre">Policier</span></li>
+					<li>Date&nbsp;: <time datetime="2012" itemprop="datePublished">2012</time></li>
+					<li itemprop="director" itemscope itemtype="http://schema.org/Person">Réalisateur&nbsp;: <span itemprop="name">Sam Mendes</span></li>
+					<li itemprop="actors" itemscope itemtype="http://schema.org/Person">
 						Acteurs principaux&nbsp;:
 						<ul>
-							<li>Daniel Craig</li>
-							<li>Judi Dench</li>
+							<li itemprop="name">Daniel Craig</li>
+							<li itemprop="name">Judi Dench</li>
 						</ul>
 					</li>
 				</ul>
-			</article>
+			</article> <!-- scope Movie -->
 		</section>
 	</body>
 </html>
