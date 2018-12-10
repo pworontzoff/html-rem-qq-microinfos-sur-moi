@@ -18,7 +18,7 @@
 
 Vous trouverez dans ce dossier un fichier texte HTML nommé **index.html**. Cette page contient un document HTML5 présentant quelques informations à propos d'un mystérieux John qui aime James Bond et le HTML.
 
-Votre but est d'ajouter à cette structure toutes les microdata présentes sur [schema.org](http://schema.org) qui sont nécessaires pour obtenir le résultat donné dans les quelques captures d'écrans suivantes, obtenues en copier-collant le code de la balise body comme &laquo;&nbsp;extrait de code&nbsp;&raquo; sur le site [http://www.google.com/webmasters/tools/richsnippets](http://www.google.com/webmasters/tools/richsnippets) qui permet de visualiser les données obtenues grâce aux microdata.
+Votre but est d'ajouter à cette structure toutes les microdata présentes sur [schema.org/docs/full](https://schema.org/docs/full.html) qui sont nécessaires pour obtenir le résultat donné dans les quelques captures d'écrans suivantes, obtenues en copier-collant le code de la balise body comme &laquo;&nbsp;extrait de code&nbsp;&raquo; sur le site [http://www.google.com/webmasters/tools/richsnippets](http://www.google.com/webmasters/tools/richsnippets) qui permet de visualiser les données obtenues grâce aux microdata.
 
 * * *
 
